@@ -31,5 +31,17 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseBook" aria-expanded="true" aria-controls="collapseTwo">
+                    <span>{{ __('Booking Management') }}</span>
+                </a>
+                <div id="collapseBook" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item {{ request()->is('admin/arenas') || request()->is('admin/arenas/*') ? 'active' : '' }}" href="{{ route('admin.arenas.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Arena') }}</a>
+                        <a class="collapse-item {{ request()->is('admin/bookings') || request()->is('admin/bookings/*') ? 'active' : '' }}" href="{{ route('admin.bookings.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Booking') }}</a>
+                    </div>
+                </div>
+            </li>
+
 
         </ul>

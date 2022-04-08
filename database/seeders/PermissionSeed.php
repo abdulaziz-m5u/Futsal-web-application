@@ -35,6 +35,16 @@ class PermissionSeed extends Seeder
             [ 'title' => 'user_edit',],
             [ 'title' => 'user_view',],
             [ 'title' => 'user_delete',],
+            [ 'title' => 'arena_access',],
+            [ 'title' => 'arena_create',],
+            [ 'title' => 'arena_edit',],
+            [ 'title' => 'arena_view',],
+            [ 'title' => 'arena_delete',],
+            [ 'title' => 'booking_access',],
+            [ 'title' => 'booking_create',],
+            [ 'title' => 'booking_edit',],
+            [ 'title' => 'booking_view',],
+            [ 'title' => 'booking_delete',],
         ];
 
             Permission::insert($permissions);
